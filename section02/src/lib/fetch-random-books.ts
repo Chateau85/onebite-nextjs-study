@@ -9,8 +9,7 @@ export default async function fetchRandomBooks(): Promise<BookData[]> {
             throw new Error();
         }
         return await response.json();
-    } catch (err) {
-        console.error(err);
+    } catch {
         return [];
     }
 }
