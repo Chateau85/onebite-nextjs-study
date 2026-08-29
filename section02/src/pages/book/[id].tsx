@@ -75,7 +75,7 @@ export default function Page({ book }: InferGetStaticPropsType<typeof getStaticP
             <div className={style.container}>
                 {/* <div>{id}</div> */}
                 <div style={{ backgroundImage: `url('${coverImgUrl}')` }} className={style.cover_img_container}>
-                    <img src={coverImgUrl} />
+                    <img src={coverImgUrl} alt={`${title} 표지`} />
                 </div>
                 <div className={style.title}>
                     {title}

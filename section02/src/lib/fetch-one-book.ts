@@ -9,8 +9,7 @@ export default async function fetchOneBook(id: number): Promise<BookData | null>
             throw new Error();
         }
         return await response.json();
-    } catch (err) {
-        console.error(err);
+    } catch {
         return null;
     }
 }

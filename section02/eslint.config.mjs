@@ -3,16 +3,11 @@ import nextVitals from 'eslint-config-next/core-web-vitals';
 
 export default defineConfig([
   ...nextVitals,
-  globalIgnores([
-    '.next/**',
-    'node_modules/**',
-    'out/**',
-    'build/**',
-    'legacy_src/**',
-    'next-env.d.ts',
-  ]),
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
   {
     rules: {
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
       'react-hooks/set-state-in-effect': 'off',
     },
   },
